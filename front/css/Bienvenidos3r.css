@@ -1,0 +1,289 @@
+#botao {
+    border: none;
+    width: 28px;
+    height: 28px;
+    background-color: #DF4665;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    top: 1.75px;;
+}
+
+#botao img {
+    width: 16px;
+    height: 16px;
+}
+
+header form {
+    background: #DF4665;
+    width: 217px;
+    height: 28px;
+    display: inline;
+}
+
+header form input {
+    background: #DF4665;
+    border: none;
+    width: 189px;
+    height: 28px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: #F4A7B7;
+    font-style: italic;
+    text-indent: 15px;
+}
+
+header {
+    width: 100%;
+    background: #F25071;
+    display: flex;
+    height: 66px;
+    align-items: center;
+}
+
+header p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 100px;
+    margin-right:650px;
+}
+
+header li {  
+    float: left;
+    margin-left: 20px;
+}
+
+.sino {
+    width: 16px;
+    height: 18px;
+}
+
+.config {
+    width: 18px;
+    height: 19.5px;
+}
+
+.user {
+    width: 28px;
+    height: 28px;
+}
+
+#seta {
+    width: 13px;
+    height: 9px;
+    position: relative;
+    right: 15px;
+    top: 5px;
+    background: #F25071;
+}
+
+.mensagens {
+    background: #f8f7f7;
+}
+
+.ladoesquerdo h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.ladoesquerdo li {
+    display: inline-block;
+    background: #FBF100;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 54px;
+    text-align: center;
+    margin-left: 22px;
+    margin-top: 32px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+}
+
+.ladoesquerdo li p {
+    margin-top: 13px;
+}
+
+.ladoesquerdo li input {
+    width: 19px;
+    height: 19px;
+    background: #FFFFFF;
+    border: 2px solid #DEDEDE;
+    box-sizing: border-box;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.ladoesquerdo ul {
+    width: 800px;
+    height: 207px;
+    background: #F25071;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-bottom: 75px;
+}
+
+#alimentacao {
+    width: 225px;
+}
+
+#moradia {
+    width: 167px;
+    margin-left: 42px;
+}
+
+#documentacao {
+    width: 256px;
+    margin-left: 42px;
+}
+
+#transporte {
+    width: 193px;
+}
+
+#educacao {
+    width: 181px;
+}
+
+#saude {
+    width: 140px;
+}
+
+#outros {
+    width: 151px;
+}
+
+.ladoesquerdo form {
+    width: 800px;
+    height: 373px;
+    background: #F25071;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ladoesquerdo form input {
+    width: 766px;
+    height: 249px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 21px;
+    margin-bottom: 24px;
+}
+
+.ladoesquerdo form button {
+    width: 193px;
+    height: 54px;
+    background: #FBF100;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    margin-left: 575px;
+}
+
+.ladoesquerdo a {
+    color: black;
+    text-decoration: none;
+}
+
+.ladoesquerdo {
+    margin-top: 80px;
+    margin-left: 57px;
+}
+
+.voluntario {
+    width: 381px;
+    height: 352px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.voluntario h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    position: relative;
+    bottom: 135px;
+    margin: 25px 0;
+}
+
+.voluntario h2 {
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    position: relative;
+    bottom: 135px;
+    margin-bottom: 25px;
+}
+
+.voluntario h3 {
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    position: relative;
+    bottom: 135px;
+}
+
+.voluntario img {
+    width: 270px;
+    height: 270px;
+    position: relative;
+    bottom: 135px;
+}
+
+.ladodireito {
+    position: relative;
+    top: 135px;
+    margin-top: 135px;
+    margin-left: 57px;
+}
+
+.ladodireito button {
+    width: 381px;
+    height: 103px;
+    background: #F25071;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.ladodireito a {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.mensagens {
+    display: flex;
+}

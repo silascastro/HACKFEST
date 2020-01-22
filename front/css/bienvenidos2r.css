@@ -1,0 +1,277 @@
+#botao {
+    border: none;
+    width: 28px;
+    height: 28px;
+    background-color: #DF4665;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    top: 1.75px;;
+}
+
+#botao img {
+    width: 16px;
+    height: 16px;
+}
+
+header form {
+    background: #DF4665;
+    width: 217px;
+    height: 28px;
+    display: inline;
+}
+
+header form input {
+    background: #DF4665;
+    border: none;
+    width: 189px;
+    height: 28px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: #F4A7B7;
+    font-style: italic;
+    text-indent: 15px;
+}
+
+header {
+    width: 100%;
+    background: #F25071;
+    display: flex;
+    height: 66px;
+    align-items: center;
+}
+
+header p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 100px;
+    margin-right:650px;
+}
+
+header li {  
+    float: left;
+    margin-left: 20px;
+}
+
+.sino {
+    width: 16px;
+    height: 18px;
+}
+
+.config {
+    width: 18px;
+    height: 19.5px;
+}
+
+.user {
+    width: 28px;
+    height: 28px;
+}
+
+#seta {
+    width: 13px;
+    height: 9px;
+    position: relative;
+    right: 15px;
+    top: 5px;
+    background: #F25071;
+}
+
+.comunidade {
+    background: #f8f7f7;
+    display: flex;f
+}
+
+#titulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    color: #A7A1A1;
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;  
+}
+
+.texto p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.info {
+    width: 203px;
+    height: 232px;
+    left: 74px;
+    top: 174px;
+    background: #F25071;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info h2 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.info h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+    width: 144px;
+    height: 37px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.info img {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.texto p {
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 19px;
+    width: 690px;
+    margin-left: 21px;
+}
+
+.texto h4 {
+    font-family: Raleway;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    color: #A7A1A1;
+    margin-left: 663px;
+    margin-bottom: 21px;
+}
+
+.texto a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    width: 144px;
+    height: 37px;
+    margin-top: 10px;
+}
+
+.ajudar {
+    background: #FBF100;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 144px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    margin-left: 603px;
+    margin-top: 15px;
+}
+
+.texto {
+    width: 773px;
+    height: 232px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.tags {
+    width: 276px;
+    height: 71px;
+    background: #FBF100;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.tags a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+
+.chat {
+    width: 276px;
+    height: 71px;
+    background: #F25071;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.chat a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    color: white;
+}
+
+.notificacoes {
+    width: 276px;
+    height: 557px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.notificacoes h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
+
+.publicacao {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.feed {
+    margin-top: 70px;
+    position: relative;
+    right: 60px;
+}
+
+.acoes {
+    margin-top: 70px;
+    position: relative;
+    right: 20px;
+}
+
+.acoes button {
+    margin-bottom: 20px;
+}

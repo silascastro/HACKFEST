@@ -1,0 +1,321 @@
+header ul li a {
+    float: right;
+    margin-left: 40px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFF;
+    margin-top: 19px;
+    text-decoration: none;
+}
+
+header ul {
+    margin-right: 168px;
+}
+
+header {
+    width: auto;
+    height: 55px;
+}
+
+.tela-inicial {
+    width: 100%;
+    height: 1024px;
+    background-image: url(image1.jpg);
+}
+
+#logo1 {
+    margin-top: 99px;
+    margin-left: 420px;
+    float: left;
+}
+
+.idioma p {
+    font-family: 'Raleway';
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.idioma p img {
+    position: relative;
+    top: 15px;
+}
+
+.titulo1 {
+    font-size: 2px;
+    margin-bottom: 10px;
+}
+
+.idioma img {
+    width: 44px;
+    height: 43px;
+    margin-left: 26px;
+}
+
+.idioma {
+    position: relative;
+    top: 26px;
+}
+
+.idioma p {
+    margin-left: 1120px;
+}
+
+.login {
+    margin-top: 100px;
+    margin-left: 1060px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+}
+
+.login input {
+    width: 222px;
+    height: 41px;
+    font-size: 18px;
+    line-height: 21px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+
+#logado {
+    font-family: 'Raleway';
+    font-size: 10px;
+    font-style: italic;
+    color: white;
+}
+
+#logado input {
+    width: 18px;
+    height: 18px;
+    background: white;
+    position: relative;
+    top: 5px;
+}
+
+.login button {
+    font-family: 'Raleway', sans-serif;
+    width: 221px;
+    height: 41px;
+    background: #FBF100;
+    border-radius: 10px;
+    border: none;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login a {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.slogan p {
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+    width: 573px;
+    margin-left: 434px;
+}
+
+.textos {
+    width: 100%;
+    height: 720px;
+    background: rgba(211, 56, 87, 0.5);
+    margin-top: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textos h1 {
+    font-family: 'Raleway';
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#quem-somos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1041px;
+    height: 230px;
+    text-align: center;
+}
+
+#quem-somos p {
+    font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-indent: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#depoimentos div {
+    display: flex;
+}
+#depoimentos {
+    width: 1041px;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.depoimentos-pessoa {
+    float: left;
+    width: 308;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.depoimentos-pessoa img {
+    width: 102px;
+    height: 102px;
+    margin: 20px;
+}
+
+.depoimentos-pessoa:not(img) {
+    color: white;
+    font-family: 'Raleway';
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.depoimentos-pessoa h2 {
+    font-size: 20px;
+    font-family: 'Raleway';
+    margin: 20px;
+}
+
+body {
+    background: #f25071;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+#cadastro {     
+    width: 100%;
+    height: 613px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cadastro h1 {
+    font-family: 'Raleway';
+    font-size: 38px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#cadastro p {
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
+
+.checkbox p {
+    font-size: 30px;
+    flex-direction: column-reverse;
+}
+
+#cadastro button {
+    font-family: 'Raleway', sans-serif;
+    width: 423px;
+    height: 41px;
+    background: #FBF100;
+    border-radius: 10px;
+    border: none;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}
+
+.checkbox input {
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    width: 19px;
+    height: 19px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);]
+}
+
+.text {
+    width: 423px;
+    height: 41px;
+    background-color: white;
+    border: none;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-style: italic;
+    font-size: 18px;
+    color: #a7a1a1;
+}
+
+.check2 {
+    position: relative;
+    bottom: 45px;
+    float: right;
+}
+
+.rodape {
+    width: 100%;
+    display: flex;
+
+    height: 80px;
+    align-items: center;
+    justify-items: center;
+}
+
+.rodape ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+.rodape p {
+    font-family: 'Raleway';
+    font-size: 24px;
+    color: white;
+    margin-left: 587px;
+    margin-right: 412px;
+}
