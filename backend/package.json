@@ -17,6 +17,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "mysql2": "^2.1.0",
-    "sequelize": "^5.21.3"
+    "sequelize": "^5.21.3",
+    "socket.io": "^2.3.0"
   }
 }

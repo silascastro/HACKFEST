@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/bienvenidos4r.css">
         <link rel="stylesheet" href="css/reset.css">
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
         <title>Chat Bienvenidos</title>
     </head>
 
@@ -55,11 +56,20 @@
                 <form>
                     <button><img id="clipe" src="css/clipe.png" alt="anexos"></button>
                     <input type="text" placeholder="Escrever mensagem..."><button id="buttonemoji" ><img id="emoji" src="css/emoji.png" alt="emojis"></button>
-                    <button><img id="enviar" src="css/enviar.png" alt="enviar"></button>
+                    <button onclick="teste()"><img id="enviar" src="css/enviar.png" alt="enviar" ></button>
                 </form>
             </div>
         </div>
 
+       <script>
+           var socket = io('http://localhost:3000');
+           document.getElementById("enviar").addEventListener("click", myFunction);
+
+           function myFunction() {
+             socket.emit('sendMessage', {message: 'teste', author: 'autor'});
+           }
+
+       </script>
+
     </body>
- 
 </html>

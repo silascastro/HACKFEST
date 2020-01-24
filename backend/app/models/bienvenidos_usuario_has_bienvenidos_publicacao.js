@@ -12,9 +12,9 @@ module.exports = (sequelize, DataTypes) =>{
     bienvenidos_usuario_has_bienvenidos_publicacao.associate = function(models){
       
       models.bienvenidos_usuario_has_bienvenidos_publicacao.hasMany(models.bienvenidos_usuario, 
-        {foreignKey: 'bienvenidos_usuario_id', as: 'bienvenidos_usuario'});  
+        {foreignKey: 'id', as: 'bienvenidos_usuario'});  
         models.bienvenidos_usuario_has_bienvenidos_publicacao.hasMany(models.bienvenidos_publicacao, 
-          {foreignKey: 'bienvenidos_publicacao_id', as: 'bienvenidos_publicacao'});  
+          {foreignKey: 'id', as: 'bienvenidos_publicacao'});  
     };
 
     

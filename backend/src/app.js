@@ -1,11 +1,17 @@
 const express = require('express');
+
 const app = express();
 const bodyParser = require('body-parser');
+
 const {bienvenidos_usuario} = require('../app/models');
 const {bienvenidos_publicacao} = require('../app/models');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+
+app.get('/', (req, res, next)=> {
+    res.status(200).send({msg: 'funcionou!'});
+});
 
 
 /* usuario */
@@ -34,6 +40,11 @@ app.post('/user', (req, res, next)=> {
         res.status(500).send(e);
     });
 });
+
+app.delete('/user/:id', (res, req, next)=>{
+    console.log('teste');
+})
+
 
 app.get('/pub', (req, res, next)=> {
     bienvenidos_publicacao.findAll()
