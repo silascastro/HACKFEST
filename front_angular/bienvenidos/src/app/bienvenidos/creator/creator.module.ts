@@ -17,9 +17,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { BasicChatComponent } from './components/basic-chat/basic-chat.component';
+import { ReceivedMessageComponent } from './components/received-message/received-message.component';
+import { SentMessageComponent } from './components/sent-message/sent-message.component';
 
 @NgModule({
-  declarations: [  HomeComponent, BasicChatComponent],
+  declarations: [  HomeComponent, BasicChatComponent, ReceivedMessageComponent, SentMessageComponent],
   imports: [
     CommonModule,
     CreatorRoutingModule,
