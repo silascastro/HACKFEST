@@ -52,13 +52,18 @@ header p {
     line-height: 35px;
     text-align: center;
     color: #FFFFFF;
-    margin-left: 100px;
-    margin-right:650px;
+    margin-left: 50px;
+    margin-right:550px;
 }
 
 header li {  
     float: left;
     margin-left: 20px;
+}
+
+.idioma {
+    width: 25px;
+    height: 25px;
 }
 
 .sino {
@@ -76,6 +81,12 @@ header li {
     height: 28px;
 }
 
+.voltar img {
+    margin-left: 35px;
+    width: 18px;
+    height: 18px;
+}
+
 #seta {
     width: 13px;
     height: 9px;
@@ -87,7 +98,7 @@ header li {
 
 .comunidade {
     background: #f8f7f7;
-    display: flex;f
+    display: flex;
 }
 
 #titulo {
@@ -216,6 +227,7 @@ header li {
     line-height: 31px;
     text-align: center;
     color: #000000;
+    text-decoration: none;
 }
 
 .chat {
@@ -234,6 +246,7 @@ header li {
     line-height: 31px;
     text-align: center;
     color: white;
+    text-decoration: none;
 }
 
 .notificacoes {

@@ -11,6 +11,7 @@
     <body>
         
         <header>
+            <a class="voltar" href="bienvenidos2v.html"><img src="css/voltar.png" alt="voltar"></a>
             <p>Chat</p>
             <ul>
                 <li>
@@ -18,6 +19,8 @@
                     <input type="search" placeholder="Pesquisar"><button id="botao"><img src="css/search.png" alt="notificação"></button>
                     </form>
                 </li>
+                <li><img class="idioma" src="css/image4.png" alt="Bandeira do Brasil"></li>
+                <li><a href="bienvenidos4ve.html"><img class="idioma" src="css/image3.png" alt="Bandeira da Espanha"></a></li>
                 <li><a class="sino" href="#"><img src="css/sino.png" alt="sino"></a></li>
                 <li><a class="config" href="#"><img src="css/config.png" alt="configuração"></a></li>
                 <li><a class="user" href="#"><img src="css/user.png" alt="usuário"></a></li>
@@ -27,35 +30,32 @@
         <div class="mensagens">
             <div class="ladoesquerdo">
                 <h1>Chat</h1>
-                <ul>
+                <ul class="escolha">
                     <li><button>Contatos</button></li>
-                    <li><button>Recentes</button></li>
+                    <li><button id="recentes">Recentes</button></li>
                 </ul>
                 <div class="contatos">
                     <ul>
-                        <li><p><img src="css/user3.png" alt="user"><a href="#">Carlos Fernando</a></p></li>
-                        <li><p><img src="css/user3.png" alt="user"><a href="#">Sebastian Gimenez</a></p></li>
-                        <li><p><img src="css/user3.png" alt="user"><a href="#">Celina Passos</a></p></li>
+                        <li><button><img src="css/user3.png" alt="user"><p>Carlos Fernando</p></button></li>
+                        <li><button><img src="css/user3.png" alt="user"><p>Sebastian Gimenez</p></button></li>
+                        <li><button><img src="css/user3.png" alt="user"><p>Celina Passos</p></button></li>
                     </ul>
                 </div>
-                <div class="recentes">
-                    <ul>
-                        <li><p><img src="css/user3.png" alt="user"><a href="#">Eliza Fernandes</a></p></li>
-                        <li><p><img src="css/user3.png" alt="user"><a href="#">Luciana Gimenez</a></p></li>
-                        <li><p><img src="css/user3.png" alt="user"><a href="#">Roberto Passos</a></p></li>
-                    </ul>
-                </div>
+
             </div>
             <div class="ladodireito">
-                <img src="css/useryellow.png" alt="user">
-                <h1>Sebastian Gimenez</h1>
-                <h3>Online</h3>
-                <input type="text">
+                <div class="cima">
+                    <img class="foto" src="css/useryellow.png" alt="user">
+                    <div class="info">
+                        <h1>Sebastian Gimenez</h1>
+                        <h3>Online</h3>
+                    </div>
+                </div>
+                <input class="tela" type="text">
                 <form>
-                    <button><img src="css/clipe.png" alt="anexos"></button>
-                    <input type="text">
-                    <button><img src="css/emoji.png" alt="emojis"></button>
-                    <button><img src="css/enviar.png" alt="enviar"></button>
+                    <button><img id="clipe" src="css/clipe.png" alt="anexos"></button>
+                    <input type="text" placeholder="Escrever mensagem..."><button id="buttonemoji" ><img id="emoji" src="css/emoji.png" alt="emojis"></button>
+                    <button><img id="enviar" src="css/enviar.png" alt="enviar"></button>
                 </form>
             </div>
         </div>

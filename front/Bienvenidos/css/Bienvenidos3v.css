@@ -52,13 +52,18 @@ header p {
     line-height: 35px;
     text-align: center;
     color: #FFFFFF;
-    margin-left: 100px;
-    margin-right:650px;
+    margin-left: 50px;
+    margin-right:500px;
 }
 
 header li {  
     float: left;
     margin-left: 20px;
+}
+
+.idioma {
+    width: 25px;
+    height: 25px;
 }
 
 .sino {
@@ -69,6 +74,12 @@ header li {
 .config {
     width: 18px;
     height: 19.5px;
+}
+
+.voltar img {
+    width: 18px;
+    height: 18px;
+    margin-left: 60px;
 }
 
 .user {
@@ -282,6 +293,7 @@ header li {
     line-height: 41px;
     text-align: center;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .mensagens {

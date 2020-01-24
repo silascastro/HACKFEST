@@ -107,7 +107,7 @@ header {
 }
 
 .login button {
-    font-family: 'Raleway', sans-serif;
+    
     width: 221px;
     height: 41px;
     background: #FBF100;
@@ -118,6 +118,14 @@ header {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.login button a, #cadastro button a {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: none;
 }
 
 .login a {
