@@ -29,14 +29,14 @@
             <div class="ladoesquerdo">
                 <h1>Chat</h1>
                 <ul class="escolha">
-                    <li><button>Contatos</button></li>
-                    <li><button id="recentes">Recentes</button></li>
+                    <li><button (click)="findContacts('all')" >Contatos</button></li>
+                    <li><button id="recentes" (click)="findContacts('recents')">Recentes</button></li>
                 </ul>
                 <div class="contatos">
-                    <ul>
-                        <li><button><img src="../../../../../assets/user3.png" alt="user"><p>Carlos Fernando</p></button></li>
-                        <li><button><img src="../../../../../assets/user3.png" alt="user"><p>Sebastian Gimenez</p></button></li>
-                        <li><button><img src="../../../../../assets/user3.png" alt="user"><p>Celina Passos</p></button></li>
+                    <ul *ngFor="let contact of contacts">
+                        <li><button (click)="findConversation(contact)">
+                            <img src="../../../../../assets/user3.png" alt="user"><p>{{ contact.name }}</p>
+                        </button></li>
                     </ul>
                 </div>
 
