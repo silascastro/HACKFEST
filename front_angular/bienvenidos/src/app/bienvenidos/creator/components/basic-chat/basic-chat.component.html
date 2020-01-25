@@ -60,9 +60,9 @@
                             <!--Messages-->
     
                             <!--received message component[message]=message-->
-                            <app-received-message *ngIf="message.id_do_emissor !== id_do_usuario" [message]=message ></app-received-message>
+                            <app-received-message *ngIf="message.id_do_emissor !== id_user" [message]=message ></app-received-message>
                             <!--sent message component[message]=message-->
-                            <app-sent-message *ngIf="message.id_do_emissor === id_do_usuario" [message]=message ></app-sent-message>
+                            <app-sent-message *ngIf="message.id_do_emissor === id_user" [message]=message ></app-sent-message>
      
     
     

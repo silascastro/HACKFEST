@@ -19,9 +19,10 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BasicChatComponent } from './components/basic-chat/basic-chat.component';
 import { ReceivedMessageComponent } from './components/received-message/received-message.component';
 import { SentMessageComponent } from './components/sent-message/sent-message.component';
+import { ViewRequestsComponent } from './components/view-requests/view-requests.component';
 
 @NgModule({
-  declarations: [  HomeComponent, BasicChatComponent, ReceivedMessageComponent, SentMessageComponent],
+  declarations: [  HomeComponent, BasicChatComponent, ReceivedMessageComponent, SentMessageComponent, ViewRequestsComponent],
   imports: [
     CommonModule,
     CreatorRoutingModule,

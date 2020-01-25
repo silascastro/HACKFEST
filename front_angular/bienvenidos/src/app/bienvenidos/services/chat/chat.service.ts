@@ -11,22 +11,22 @@ export class ChatService {
     
     constructor(private httpClient: HttpClient){}
 
-    getContacts(id_do_usuario,type){
+    getContacts(id_user,type){
 
             // mockup "fake data"
         if(type==='all'){
             return [
-                {name:'Celina Passos',id_do_usuario:3},
-                {name:'Sebastian Gimenez',id_do_usuario:2},
-                {name:'Carlos Fernando',id_do_usuario:1}]
+                {name:'Celina Passos',id_user:3},
+                {name:'Sebastian Gimenez',id_user:2},
+                {name:'Carlos Fernando',id_user:1}]
         
         }else{
             return [
-                {name:'Sebastian Gimenez',id_do_usuario:2}]
+                {name:'Sebastian Gimenez',id_user:2}]
         }    
 
         const obj={
-            'id_do_usuario':id_do_usuario,
+            'id_user':id_user,
             'type':type
         }
              
@@ -40,18 +40,18 @@ export class ChatService {
         }
                     // mockup "fake data"
         return [
-        {message:'ola',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':5,'id_do_receptor':2},
-        {message:'tudo bem ',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
-        {message:'tudo sim, queria uma ajuda',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':5,'id_do_receptor':2},
-        {message:'pode falar ',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
-        {message:'estou com um problema pra arrumar emprego',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
-        {message:'procuro muito',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
-        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
-        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
-        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
-        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
-        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
-        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
+        {message:'ola',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':5,'id_do_receptor':2,tags:[]},
+        {message:'tudo bem ',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5,tags:[]},
+        {message:'tudo sim, queria uma ajuda',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':5,'id_do_receptor':2,tags:[]},
+        {message:'pode falar ',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5,tags:[]},
+        {message:'estou com um problema pra arrumar emprego',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5,tags:[]},
+        {message:'procuro muito',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5,tags:[]},
+        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5,tags:[]},
+        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5,tags:[]},
+        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5,tags:[]},
+        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5,tags:[]},
+        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5,tags:[]},
+        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5,tags:[]},
     ]
         
 

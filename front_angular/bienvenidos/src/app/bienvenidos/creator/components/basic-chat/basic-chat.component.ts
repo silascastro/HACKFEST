@@ -12,7 +12,7 @@ export class BasicChatComponent implements OnInit {
   contacts=[];
   current_conversation=[];
   current_receptor;
-  id_do_usuario=5;
+  id_user=5;
   angForm: FormGroup;
   type_of_chat='recents';
 
@@ -50,7 +50,7 @@ export class BasicChatComponent implements OnInit {
         console.log("######@@@",m)
         this.send(m);
 
-        let a = {message:m,timestamp:'Wed 01-01-2009 6:00','id_do_emissor':this.id_do_usuario,'id_do_receptor':this.current_receptor.id_do_usuario};
+        let a = {message:m,timestamp:'Wed 01-01-2009 6:00','id_do_emissor':this.id_user,'id_do_receptor':this.current_receptor.id_user};
         this.current_conversation.push(a)
 
         this.angForm.reset();
@@ -59,7 +59,7 @@ export class BasicChatComponent implements OnInit {
   }
   send(message){
 
-    this.messageService.sendMessages(this.id_do_usuario,this.current_receptor.id_do_usuario,message);
+    this.messageService.sendMessages(this.id_user,this.current_receptor.id_user,message);
   }
 
   findContacts(type_of_contacts){
@@ -71,7 +71,7 @@ export class BasicChatComponent implements OnInit {
     this.current_receptor=contact;
 
 
-    this.current_conversation=this.chatService.getConversation(contact.id,this.id_do_usuario);
+    this.current_conversation=this.chatService.getConversation(contact.id,this.id_user);
     console.log('!!!!!!!!!!!!!',this.current_conversation)
 
   }

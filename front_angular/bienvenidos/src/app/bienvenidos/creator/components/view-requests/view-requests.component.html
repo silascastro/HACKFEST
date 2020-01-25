@@ -1,0 +1,55 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <title>Mensagens Bienvenidos</title>
+    </head>
+
+    <body>
+        
+        <header>
+            <a class="voltar" href="bienvenidos2v.html"><img src="../../../../../assets/voltar.png" alt="voltar"></a>
+            <p>Mensagens</p>
+            <ul>
+                <li>
+                    <form>
+                    <input type="search" placeholder="Pesquisar"><button id="botao"><img src="../../../../../assets/search.png" alt="notificação"></button>
+                    </form>
+                </li>
+                <li><img class="idioma" src="../../../../../assets/image4.png" alt="Bandeira do Brasil"></li>
+                <li><a href="bienvenidos3ve.html"><img class="idioma" src="../../../../../assets/image3.png" alt="Bandeira da Espanha"></a></li>
+                <li><a class="sino" href="#"><img src="../../../../../assets/sino.png" alt="sino"></a></li>
+                <li><a class="config" href="#"><img src="../../../../../assets/config.png" alt="configuração"></a></li>
+                <li><a class="user" href="#"><img src="../../../../../assets/user.png" alt="usuário"></a></li>
+                <li><button id="seta"><img src="../../../../../assets/seta.png" alt="seta"></button></li>
+            </ul>
+        </header> 
+        <div class="mensagens">
+            <div class="ladoesquerdo">
+                <h2>Selecionar áreas de interesse:</h2>
+                <ul>
+                    <!-- <li *ngFor="let tag of available_tags" ><p id= {{tag.id}} ><input type="checkbox">  {{tag.name}}</p></li> -->
+                    <li *ngFor="let tag of available_tags" ><mat-checkbox  [checked]='tag.value' (change)='changeCheckbox($event.checked, tag)'>{{tag.name}}</mat-checkbox></li>
+                </ul>
+                <h2>Escrever mensagem:</h2>
+                <form class="tela" [formGroup]="angForm" novalidate>
+                    <input type="text" autofocus formControlName="text_message" #text_message>
+                    <button (click)="send_message()"><a>Enviar</a></button>
+            </form>  
+
+            </div>
+            <div class="ladodireito">
+                <div class="voluntario">
+                    <img src="../../../../../assets/useryellow.png" alt="usuário">
+                    <h1>{{ user.name }}</h1>
+                    <h2>{{ user.tipo }}</h2>
+                    <h3>{{ user.idade }} anos</h3>
+                </div>
+                <button><a href="bienvenidos4v.html">Iniciar conversa</a></button>
+            </div>
+        </div>
+
+    </body>
+ 
+</html>

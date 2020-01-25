@@ -18,20 +18,21 @@ export class MessageService {
         });
     }
         
-    public getMessages(id_do_usuario){
+    public getMessages(id_user){
         return Observable.create((observer) => {
-            this.socket.on(id_do_usuario, (message) => {
+            this.socket.on(id_user, (message) => {
               observer.next(message);
                 
             });
         });
     }
   
-    public sendMessages(id_do_emissor,id_do_receptor,message){
+    public sendMessages(id_do_emissor,id_do_receptor,message,tags=[]){
         const obj={
             'id_do_emissor':id_do_emissor,
             'id_do_receptor':id_do_receptor,
-            'message':message
+            'message':message,
+            'tags':tags
         }
         return 1;
     //   return this.socket.emit('sendMessage', {'obj': obj}, (res) => {
@@ -42,25 +43,25 @@ export class MessageService {
 
     
     
-    // public getPessoaStatus(id_do_usuario){
+    // public getPessoaStatus(id_user){
     //     return Observable.create((observer) => {
-    //         this.socket.on(id_do_usuario, (message) => {
+    //         this.socket.on(id_user, (message) => {
     //           observer.next(message);
                 
     //         });
     //     });
     // }
     
-    // public getMenssagemStatus(id_do_usuario){
+    // public getMenssagemStatus(id_user){
     //     return Observable.create((observer) => {
-    //         this.socket.on(id_do_usuario, (message) => {
+    //         this.socket.on(id_user, (message) => {
     //             observer.next(message);
     //         });
     //     });
     // }
     
-    public unsubscribe(id_do_usuario){
-        this.socket.off(id_do_usuario);
-        this.socket.removeAllListeners(id_do_usuario);
+    public unsubscribe(id_user){
+        this.socket.off(id_user);
+        this.socket.removeAllListeners(id_user);
     }
 }
