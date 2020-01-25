@@ -43,8 +43,16 @@ export class ChatService {
         {message:'ola',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':5,'id_do_receptor':2},
         {message:'tudo bem ',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
         {message:'tudo sim, queria uma ajuda',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':5,'id_do_receptor':2},
-        {message:'pode falar ',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5}
-        ]
+        {message:'pode falar ',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
+        {message:'estou com um problema pra arrumar emprego',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
+        {message:'procuro muito',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
+        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
+        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
+        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
+        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
+        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
+        {message:'test',timestamp:'Wed 01-01-2009 6:00','id_do_emissor':2,'id_do_receptor':5},
+    ]
         
 
         // return this.httpClient.get(`${environment.API_URL}:${environment.API_PORT}/conversa/${obj}`).toPromise();

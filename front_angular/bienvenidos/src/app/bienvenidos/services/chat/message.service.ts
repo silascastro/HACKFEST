@@ -33,10 +33,10 @@ export class MessageService {
             'id_do_receptor':id_do_receptor,
             'message':message
         }
-        
-      return this.socket.emit('sendMessage', {'obj': obj}, (res) => {
+        return 1;
+    //   return this.socket.emit('sendMessage', {'obj': obj}, (res) => {
               
-          });
+    //       });
   }
   
 

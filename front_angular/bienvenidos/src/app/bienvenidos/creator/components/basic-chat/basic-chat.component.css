@@ -231,6 +231,8 @@ header li {
 .tela {
     width: 899px;
     height: 325px;
+    overflow-y: scroll;
+
 }
 
 #clipe {

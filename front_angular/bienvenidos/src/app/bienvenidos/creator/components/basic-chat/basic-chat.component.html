@@ -28,9 +28,12 @@
         <div class="mensagens">
             <div class="ladoesquerdo">
                 <h1>Chat</h1>
-                <ul class="escolha">
-                    <li><button (click)="findContacts('all')" >Contatos</button></li>
-                    <li><button id="recentes" (click)="findContacts('recents')">Recentes</button></li>
+                <ul class="escolha" >
+
+                    <li><button (click)="findContacts('all')" *ngIf="type_of_chat!=='all'">Contatos</button></li>
+                    <li><button  id="recentes"(click)="findContacts('all')" *ngIf="type_of_chat==='all'">Contatos</button></li>
+                    <li><button  id="recentes" (click)="findContacts('recents')" *ngIf="type_of_chat==='recents'">Recentes</button></li>
+                    <li><button  (click)="findContacts('recents')" *ngIf="type_of_chat!=='recents'">Recentes</button></li>
                 </ul>
                 <div class="contatos">
                     <ul *ngFor="let contact of contacts">
@@ -52,31 +55,40 @@
 
                 <!--messages section  class="row message"-->
                 <div class="tela" id="conversation">
-                        <div class="col-12 col-md-12">
+                        <div class="col-12 col-md-12" *ngFor="let message of current_conversation">
     
                             <!--Messages-->
     
-                            <!--received message component-->
-                            <app-received-message></app-received-message>
-                            <!--sent message component-->
-                            <app-sent-message></app-sent-message>
-                            <app-sent-message></app-sent-message>
-    
-                            <!--received message component-->
-                            <app-received-message></app-received-message>
-                            <!--sent message component-->
-                            <app-sent-message></app-sent-message>
+                            <!--received message component[message]=message-->
+                            <app-received-message *ngIf="message.id_do_emissor !== id_do_usuario" [message]=message ></app-received-message>
+                            <!--sent message component[message]=message-->
+                            <app-sent-message *ngIf="message.id_do_emissor === id_do_usuario" [message]=message ></app-sent-message>
+     
     
     
                         </div>
                     </div>
     
                 <!-- <input class="tela" type="text"> -->
-                <form>
+                <!-- <form>
                     <button><img id="clipe" src="../../../../../assets/clipe.png" alt="anexos"></button>
-                    <input type="text" placeholder="Escrever mensagem..."><button id="buttonemoji" ><img id="emoji" src="../../../../../assets/emoji.png" alt="emojis"></button>
-                    <button><img id="enviar" src="../../../../../assets/enviar.png" alt="enviar"></button>
-                </form>
+                </form> -->
+
+
+                <form class="tela" [formGroup]="angForm" novalidate>
+
+                        <button><img id="clipe" src="../../../../../assets/clipe.png" alt="anexos"></button>
+
+
+                        <input type="text" placeholder="Escrever mensagem..." autofocus formControlName="text_message" #text_message><button id="buttonemoji" ><img id="emoji" src="../../../../../assets/emoji.png" alt="emojis"></button>
+
+                        <button  (click)="send_message()" ><img id="enviar" src="../../../../../assets/enviar.png" alt="enviar"></button>
+
+                    
+                </form>  
+
+
+
             </div>
         </div>
 
