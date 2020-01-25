@@ -25,7 +25,7 @@ export class BasicChatComponent implements OnInit {
 
   ngOnInit() {
     
-    this.subscribe_on_socket({macAddress:'sendMessage'});
+    this.subscribe_on_socket('sendMessage');
     this.findContacts('recents')
 
   }
@@ -75,17 +75,15 @@ export class BasicChatComponent implements OnInit {
     console.log('!!!!!!!!!!!!!',this.current_conversation)
 
   }
-  subscribe_on_socket(selectedPC){
-    const mac_address=String(selectedPC.macAddress);
-    this.messageService.getMessages(mac_address).subscribe((message: any) => {
+  subscribe_on_socket(topic){
+    this.messageService.getMessages(topic).subscribe((message: any) => {
       console.log('!!!!!!!!!!!!!',message)
     });
   }
 
 
-  unsubscribe_on_socket(selectedPC){
-    const mac_address=String(selectedPC.macAddress);
-    this.messageService.unsubscribe(mac_address);
+  unsubscribe_on_socket(topic){
+    this.messageService.unsubscribe(topic);
   }
 
 }
